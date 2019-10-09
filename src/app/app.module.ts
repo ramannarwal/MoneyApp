@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HashrateComponent } from './layout/hashrate/hashrate.component';
+import { HashrateComponent } from './layout/hashrateComponent/hashrate.component';
+import { HashrateService} from './services/hashrate.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { HashrateComponent } from './layout/hashrate/hashrate.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HashrateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
